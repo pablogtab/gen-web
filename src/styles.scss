@@ -1,0 +1,75 @@
+@use '@angular/material' as mat;
+
+
+@include mat.core();
+
+
+$primary: #0E414B;
+$primary-contrast: #FFF;
+
+:root {
+  --color-primary: #{$primary};
+  --color-primary-contrast: #{$primary-contrast};
+}
+
+$primary-palette: (
+  50: $primary,
+  100: $primary,
+  200: $primary,
+  300: $primary,
+  400: $primary,
+  500: $primary,
+  600: $primary,
+  700: $primary,
+  800: $primary,
+  900: $primary,
+  contrast: (50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white)
+);
+
+$gen-web-primary: mat.define-palette($primary-palette);
+$gen-web-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+
+
+
+$gen-web-warn: mat.define-palette(mat.$red-palette);
+
+$gen-web-theme: mat.define-light-theme((color: (primary: $gen-web-primary,
+        accent: $gen-web-accent,
+        warn: $gen-web-warn,
+      )));
+
+
+@include mat.all-component-themes($gen-web-theme);
+
+
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, Roboto, Poppins, "Helvetica Neue", sans-serif;
+}
+
+
+h1{
+  font-size: 60px;
+}
+
+h3{
+  font-size: 25px;
+}
