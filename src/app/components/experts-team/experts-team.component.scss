@@ -1,0 +1,120 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+        margin-top: 70px;
+        color: #014F5B;
+        font-weight: 400;
+        font-family: Poppins;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0.15em;
+    }
+
+    h1 {
+        margin: 0px;
+    }
+
+    p {
+        margin-top: 40px;
+        font-family: Poppins;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 1.6;
+        letter-spacing: 0em;
+        color: #808080;
+        width: 74%;
+
+    }
+}
+
+.experts {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 5%;
+    gap: 4%;
+    justify-content: space-between;
+
+    .expert-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        text-align: center;
+        align-items: center;
+
+        .img-container {
+            position: relative;
+            width: 100%;
+
+            .buttons {
+                box-sizing: border-box;
+                position: absolute;
+                padding: 0 10%;
+                bottom: 60px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+
+                .linkedin {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100px;
+                    background-color: #99FFCC;
+                    height: 100px;
+                    border-radius: 50%;
+
+                    img {
+                        width: 60%;
+                        height: 60%
+                    }
+                }
+
+                button {
+                    background-color: #014F5B;
+                    color: white;
+                    border: none;
+                    width: 50%;
+                    height: 45px;
+                    font-family: Montserrat;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    border-radius: 22px;
+                    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+
+        img.expert {
+            width: 100%;
+        }
+
+
+        h2 {
+            font-size: 35px;
+            color: #2B2B2B;
+            font-weight: 600;
+        }
+
+        h3 {
+            margin-top: 0;
+            font-weight: 400;
+            font-style: italic;
+            width: 70%;
+        }
+
+    }
+}
