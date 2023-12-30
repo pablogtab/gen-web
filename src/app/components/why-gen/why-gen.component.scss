@@ -228,3 +228,170 @@ article {
         top: 40%;
     }
 }
+
+
+
+
+@media (min-width: 1000px) and (max-width: 1365px) {
+
+
+    article {
+
+
+
+        h1.why-gen {
+            font-size: 45px;
+            width: 60%;
+            margin-top: 20%;
+        }
+
+
+        .motives-container {
+            padding: 0 15%;
+            gap: 8%;
+            height: 250px;
+
+            .motive-1 {
+                color: #141414;
+                background-color: white;
+                border-radius: 30px;
+                flex: 1;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+                :first-child {
+                    font-size: 45px;
+
+                    a {
+                        font-size: 22px;
+                        margin-left: 15px;
+                    }
+                }
+
+                :nth-child(2) {
+                    font-size: 18px;
+                    width: 80%;
+                    align-self: center;
+
+                }
+            }
+
+            .motive-2 {
+                color: #828282;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .circle-container {
+                    transform: translate(-50%, -50%) scale(1.5);
+
+                }
+
+                .text-container {
+                    :nth-child(2) {
+                        font-size: 15px;
+                    }
+                }
+
+                .amount {
+                    font-size: 25px;
+                }
+
+            }
+
+            .motive-3 {
+                font-size: 18px;
+
+                img {
+                    width: 45%;
+                }
+            }
+        }
+
+
+        .motives-container-2 {
+            margin-top: 8%;
+            padding: 0 8%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+            font-style: italic;
+            color: #DDD;
+            height: 300px;
+
+            .motive {
+                width: 18.5%;
+
+                img {
+                    width: 15%;
+                }
+
+                h3 {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                    color: white;
+                    font-weight: 300;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 100;
+                    width: 80%;
+                    line-height: 1.35;
+                }
+            }
+
+            .align-end {
+                align-self: flex-end;
+            }
+
+
+            .line {
+                margin-top: 5%;
+                height: 70%;
+                width: 2px;
+                background: linear-gradient(180deg, transparent 0%, #AAA 50%, transparent 100%);
+
+            }
+
+            .center {
+                margin-top: -2%;
+            }
+
+        }
+
+    }
+
+
+    .background {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .background-2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding-top: 90%;
+        background: linear-gradient(180deg, #014F5B 0%, #232B33 100%);
+
+        .waves {
+            position: absolute;
+            width: 100%;
+            opacity: 0.3;
+            top: 40%;
+        }
+    }
+
+
+
+}
