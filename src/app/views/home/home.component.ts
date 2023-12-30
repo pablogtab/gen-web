@@ -6,11 +6,16 @@ import { ExpertsTeamComponent } from '../../components/experts-team/experts-team
 import { InvestmentProcessTestimoniesComponent } from '../../components/investment-process-testimonies/investment-process-testimonies.component';
 import { PartnersComponent } from '../../components/partners/partners.component';
 import { BlogComponent } from '../../components/blog/blog.component';
+import { NewsletterFormComponent } from '../../components/newsletter-form/newsletter-form.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, MatIconModule, WhyGenComponent, ExpertsTeamComponent, InvestmentProcessTestimoniesComponent, PartnersComponent, BlogComponent],
+  imports: [
+    CommonModule, MatIconModule, WhyGenComponent, ExpertsTeamComponent,
+    InvestmentProcessTestimoniesComponent, PartnersComponent, BlogComponent,
+    NewsletterFormComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
