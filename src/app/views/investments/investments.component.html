@@ -1,1 +1,61 @@
-<p>investments works!</p>
+<section class="step-1">
+  <img [src]="params.step1.imageUrl" />
+  <div class="container">
+    <div class="content">
+      <h1>{{ params.step1.title }}</h1>
+      <p>{{ params.step1.subtitle }}</p>
+      <button>Mas información</button>
+    </div>
+  </div>
+</section>
+<section class="step-2">
+  <h3 class="info">{{ params.step2.preTitle }}</h3>
+  <h1 class="info">{{ params.step2.title }}</h1>
+  <p class="info">{{ params.step2.paragraph }}</p>
+  <div class="container">
+    <div class="buttons-container">
+      @for (button of params.step2.buttons; track $index) {
+      <div class="button-container">
+        <div class="icon-container">
+          <img [src]="button.imgUrl" alt="" />
+        </div>
+        <div class="text">
+          <span>{{ button.title }}</span>
+          <p>{{ button.subtitle }}</p>
+        </div>
+      </div>
+      }
+    </div>
+    <div class="img-container">
+      <img [src]="params.step2.imgUrl" alt="" />
+    </div>
+  </div>
+</section>
+
+<section style="margin-top: -300px; margin-bottom: 100px">
+  <app-why-gen></app-why-gen>
+</section>
+
+<section class="step-3">
+  <h1 class="info">Otras propuestas de inversión</h1>
+  <p class="info">
+    Te invitamos a conocer todas nuestras opciones de inversión. Invierte en
+    activos fijos seguros a largo y corto plazo. Aprende a identificar las
+    grandes oportunidades!
+  </p>
+
+  <div class="choices">
+    @for (choice of params.step3; track $index) {
+    <div class="choice">
+      <div class="icon-container">
+        <img [src]="choice.icon" alt="" />
+      </div>
+      <h3>{{ choice.title }}</h3>
+      <p>{{ choice.subtitle }}</p>
+      <a class="more-info" [routerLink]="choice.link">Más info</a>
+    </div>
+    }
+  </div>
+</section>
+
+<app-newsletter-form></app-newsletter-form>
