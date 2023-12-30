@@ -12,13 +12,23 @@
 </section>
 <nav class="nav-container">
   <img src="assets/gen-logo-dark.png" alt="logo" />
-  <div class="pages">
-    <a>Inicio</a>
-    <a>Inversiones</a>
-    <a>Servicios</a>
-    <a>Partners</a>
-    <a>Nosotros</a>
-    <a>Contacto</a>
+  <div class="pages" >
+    <a routerLinkActive="active" routerLink="inicio">Inicio</a>
+    <span (clickOutside)="onClickOutside()" (click)="toggle()" [class.active]="rla1.isActive || rla2.isActive ||rla3.isActive ||  rla4.isActive">
+      Inversiones 
+      <mat-icon class="arrow-down-icon" id="arrow-down-icon">keyboard_arrow_down</mat-icon>
+      <div class="link-menu" (click)="$event.stopPropagation();toggle()" id="link-menu">
+        <a [class.active]="rla1.isActive" routerLink="inversiones/construccion" routerLinkActive #rla1="routerLinkActive">Construcción</a>
+        <a [class.active]="rla2.isActive" routerLink="inversiones/rent-a-car" routerLinkActive #rla2="routerLinkActive">Rent a car</a>
+        <a [class.active]="rla3.isActive" routerLink="inversiones/real-estate" routerLinkActive #rla3="routerLinkActive">Real Estate</a>
+        <a [class.active]="rla4.isActive" routerLink="inversiones/storage" routerLinkActive #rla4="routerLinkActive">Storage</a>
+      </div>
+    </span>
+    <!-- <a routerLinkActive="active" routerLink="inversiones">Inversiones</a> -->
+    <a routerLinkActive="active" routerLink="servicios">Servicios</a>
+    <a routerLinkActive="active" routerLink="partners">Partners</a>
+    <a routerLinkActive="active" routerLink="nosotros">Nosotros</a>
+    <a routerLinkActive="active" routerLink="contacto">Contacto</a>
   </div>
-  <button >Quiero invertir</button>
+  <button>Quiero invertir</button>
 </nav>
