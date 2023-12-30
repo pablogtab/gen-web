@@ -1,0 +1,21 @@
+<div class="container">
+  <h3>NOVEDADES</h3>
+  <h1>Últimas noticias</h1>
+  <div class="carousel">
+    <div class="blogs-container" id="blogs">
+      @for (blog of blogs; track $index) {
+      <div class="blog">
+        <div class="img-container">
+          <img [src]="blog.urlImage" alt="" />
+        </div>
+
+        <p class="title">{{ blog.title }}</p>
+        <p class="subtitle">{{ blog.subtitle }}</p>
+        <div class="button">
+          <img src="assets/icon-arrow.png" alt="" />
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</div>
