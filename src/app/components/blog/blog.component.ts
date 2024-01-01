@@ -34,35 +34,6 @@ export class BlogComponent {
       day: '26',
       dayOfWeek: 'Wed'
     })
-    this.blogs.push({
-      urlImage: 'assets/blog-sample.png',
-      title: '5 Tips for First-Time Home Sellers',
-      subtitle: 'In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.',
-      day: '26',
-      dayOfWeek: 'Wed'
-    })
-    this.blogs.push({
-      urlImage: 'assets/blog-sample.png',
-      title: '5 Tips for First-Time Home Sellers',
-      subtitle: 'In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.',
-      day: '26',
-      dayOfWeek: 'Wed'
-    })
-    this.blogs.push({
-      urlImage: 'assets/blog-sample.png',
-      title: '5 Tips for First-Time Home Sellers',
-      subtitle: 'In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.',
-      day: '26',
-      dayOfWeek: 'Wed'
-    })
-    this.blogs.push({
-      urlImage: 'assets/blog-sample.png',
-      title: '5 Tips for First-Time Home Sellers',
-      subtitle: 'In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.',
-      day: '26',
-      dayOfWeek: 'Wed'
-    })
-
 
   }
 
