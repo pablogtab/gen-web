@@ -55,3 +55,31 @@
         }
     }
 }
+
+
+@media (min-width: 1000px) and (max-width: 1365px) {
+    .newsletter-container {
+        h1 {
+            font-size: 35px;
+        }
+
+        h3 {
+            margin-top: 50px;
+            font-size: 18px;
+        }
+
+        .input-container {
+            margin-bottom: 70px;
+
+            input {
+                font-size: 20px;
+                padding: 14px;
+            }
+
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+
+}
