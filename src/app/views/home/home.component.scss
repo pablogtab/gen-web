@@ -329,8 +329,8 @@ article {
 
             .card {
 
-                width: 90px;
-                height: 100%;
+                width: 20vw;
+                height: 20vw;
 
                 h5 {
                     font-size: 15px;
@@ -339,12 +339,12 @@ article {
 
                 .logo {
                     margin: 10px;
-                    width: 70px;
-                    height: 70px;
+                    width: 15vw;
+                    height: 15vw;
                 }
 
                 mat-icon {
-                    transform: scale(2);
+                    transform: scale(1.8);
                 }
             }
         }
