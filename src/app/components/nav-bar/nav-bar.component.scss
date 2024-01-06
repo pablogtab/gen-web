@@ -31,6 +31,14 @@ a:active {
         align-content: center;
         justify-content: center;
         gap: 7px;
+
+        img {
+            width: 20px;
+        }
+
+        :hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -52,6 +60,10 @@ a:active {
     font-size: 16px;
     font-weight: 600;
     border-bottom: 1px solid #DDD;
+
+    .mobile-icon {
+        display: none;
+    }
 
     .pages {
         display: flex;
@@ -136,5 +148,73 @@ a:active {
         visibility: visible;
         opacity: 100%;
         transition: all 0.15s ease-in;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .pre-nav-container {
+        visibility: hidden;
+        height: 0;
+    }
+
+
+    .nav-container {
+
+        margin: 0;
+        justify-content: space-between;
+
+        .mobile-icon {
+            display: block;
+            transform: scale(1.4);
+        }
+
+        .gen-logo {
+            margin: 0;
+            width: 100px;
+        }
+
+
+
+        .pages {
+            left: 0;
+            top: 80px;
+            position: absolute;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background-color: white;
+            transform: translateX(-105%);
+            transition: transform 0.2s ease-in-out;
+            height: calc(100vh - 80px);
+
+            &.active {
+                transform: translateX(0)
+            }
+
+
+            .link-menu {
+                position: relative;
+                display: none;
+                height: max-content;
+                top: 0;
+                box-shadow: none;
+                border-radius: none;
+
+
+            }
+
+            a.active,
+            span.active {
+                background-color: transparent;
+                transition: all 0.25s ease-in;
+            }
+
+            .link-menu.active {
+                display: flex;
+            }
+        }
+
     }
 }

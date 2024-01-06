@@ -13,13 +13,24 @@ import { ClickOutsideDirective } from '../../directives/click-outside.directive'
 export class NavBarComponent {
 
   toggle() {
+    
     const menu = document.getElementById('link-menu')
     menu?.classList.toggle('active')
+
+  }
+
+  toggleSidenav() {
+    const pages = document.getElementById('pages')
+    pages?.classList.toggle('active')
   }
 
   onClickOutside() {
     const menu = document.getElementById('link-menu')
     if (menu?.classList.toString().includes('active'))
       menu?.classList.toggle('active')
+
+    const pages = document.getElementById('pages')
+    if (pages?.classList.toString().includes('active'))
+      pages?.classList.remove('active')
   }
 }

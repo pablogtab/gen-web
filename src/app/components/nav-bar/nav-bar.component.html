@@ -4,24 +4,65 @@
   <mat-icon>mail</mat-icon>
   <p class="mail">info{{ "@" }}genprojectusa.com</p>
   <div class="media">
-    <mat-icon>linked_in</mat-icon>
+    <img src="assets/icon-linkedin.png" style="margin-top: -5px" />
     <mat-icon>facebook</mat-icon>
-    <mat-icon>people</mat-icon>
+    <img src="assets/icon-instagram.png" />
   </div>
   <p><b>ESP</b> | ENG</p>
 </section>
 <nav class="nav-container">
-  <img src="assets/gen-logo-dark.png" alt="logo" />
-  <div class="pages" >
+  <mat-icon
+    class="mobile-icon"
+    (click)="$event.stopPropagation(); toggleSidenav()"
+    >menu</mat-icon
+  >
+  <img class="gen-logo" src="assets/gen-logo-dark.png" alt="logo" />
+  <div class="pages" id="pages">
     <a routerLinkActive="active" routerLink="inicio">Inicio</a>
-    <span (clickOutside)="onClickOutside()" (click)="toggle()" [class.active]="rla1.isActive || rla2.isActive ||rla3.isActive ||  rla4.isActive">
-      Inversiones 
-      <mat-icon class="arrow-down-icon" id="arrow-down-icon">keyboard_arrow_down</mat-icon>
-      <div class="link-menu" (click)="$event.stopPropagation();toggle()" id="link-menu">
-        <a [class.active]="rla1.isActive" routerLink="inversiones/construccion" routerLinkActive #rla1="routerLinkActive">Construcción</a>
-        <a [class.active]="rla2.isActive" routerLink="inversiones/rent-a-car" routerLinkActive #rla2="routerLinkActive">Rent a car</a>
-        <a [class.active]="rla3.isActive" routerLink="inversiones/real-estate" routerLinkActive #rla3="routerLinkActive">Real Estate</a>
-        <a [class.active]="rla4.isActive" routerLink="inversiones/storage" routerLinkActive #rla4="routerLinkActive">Storage</a>
+    <span
+      (clickOutside)="onClickOutside()"
+      (click)="toggle()"
+      [class.active]="
+        rla1.isActive || rla2.isActive || rla3.isActive || rla4.isActive
+      "
+    >
+      Inversiones
+      <mat-icon class="arrow-down-icon" id="arrow-down-icon"
+        >keyboard_arrow_down</mat-icon
+      >
+      <div
+        class="link-menu"
+        (click)="$event.stopPropagation(); toggle(); toggleSidenav()"
+        id="link-menu"
+      >
+        <a
+          [class.active]="rla1.isActive"
+          routerLink="inversiones/construccion"
+          routerLinkActive
+          #rla1="routerLinkActive"
+          >Construcción</a
+        >
+        <a
+          [class.active]="rla2.isActive"
+          routerLink="inversiones/rent-a-car"
+          routerLinkActive
+          #rla2="routerLinkActive"
+          >Rent a car</a
+        >
+        <a
+          [class.active]="rla3.isActive"
+          routerLink="inversiones/real-estate"
+          routerLinkActive
+          #rla3="routerLinkActive"
+          >Real Estate</a
+        >
+        <a
+          [class.active]="rla4.isActive"
+          routerLink="inversiones/storage"
+          routerLinkActive
+          #rla4="routerLinkActive"
+          >Storage</a
+        >
       </div>
     </span>
     <!-- <a routerLinkActive="active" routerLink="inversiones">Inversiones</a> -->
