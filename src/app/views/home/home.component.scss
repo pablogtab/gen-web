@@ -285,11 +285,74 @@ article {
 }
 
 
+.why-gen-module {
+    margin-top: -220px;
+    z-index: -10
+}
 
 
-@media only screen and (max-width: 768px) {
 
-    * {
-        visibility: hidden;
+@media only screen and (max-width: 1000px) {
+    article {
+
+        h1 {
+            width: 70%;
+            margin-top: 6%;
+            font-size: 22px;
+        }
+
+        h3 {
+            display: none;
+        }
+
+        button {
+            margin-top: 3%;
+            height: 40px;
+            font-size: 14px;
+            width: 45%;
+        }
+
+        .card-container {
+
+            margin-top: 10%;
+            width: 100%;
+            height: 90px;
+            padding: 0 5%;
+            gap: 3%;
+
+
+            h3 {
+                display: none;
+                position: absolute;
+                font-size: 23px;
+            }
+
+            .card {
+
+                width: 90px;
+                height: 100%;
+
+                h5 {
+                    font-size: 15px;
+                    display: none;
+                }
+
+                .logo {
+                    margin: 10px;
+                    width: 70px;
+                    height: 70px;
+                }
+
+                mat-icon {
+                    transform: scale(2);
+                }
+            }
+        }
+    }
+
+
+    .why-gen-module {
+        margin-top: -150px;
+        z-index: -10
     }
 }
