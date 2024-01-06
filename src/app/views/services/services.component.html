@@ -1,1 +1,99 @@
-<p>services works!</p>
+<article>
+  <h1>Te ayudamos a gestionar y administrar tus inversiones</h1>
+  <h3>
+    Te asesoramos y acompañamos en el proceso para generar ingresos rentables,
+    seguros y con frecuencia mensual, durante todo el año con el mínimo
+    esfuerzo.
+  </h3>
+  <button>Quiero invertir</button>
+  <img
+    src="assets/services-background.png"
+    alt="background"
+    class="background-1"
+  />
+</article>
+<section class="step-2">
+  <h3 class="info">NUESTROS SERVICIOS</h3>
+  <h1 class="info">Administración y gestión de tus inversiones</h1>
+  <p class="info">
+    Hemos dedicado más de una década a cultivar nuestra experiencia en
+    inversiones personales. Decidimos unir nuestros conocimientos y esfuerzos
+    para dar vida a una visión compartida:
+    <b>ofrecer productos de inversión excepcionales.</b>
+  </p>
+  <div class="container">
+    <div class="img-container">
+      <img src="assets/services-1.png" alt="" />
+    </div>
+    <div class="accordion-container">
+      <div class="accordion" (click)="accordionClick(0)">
+        <div class="accordion-header">
+          <span>Societario</span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Desde el comienzo, nuestro equipo de profesionales en legal y
+            contabilidad en Estados Unidos te guiará para estructurar la
+            sociedad o sociedades, según lo que mejor se ajuste a tus
+            necesidades específicas. Con nosotros, encontrarás el respaldo
+            necesario para iniciar y desarrollar tu proyecto empresarial con
+            éxito.
+          </p>
+        </div>
+      </div>
+      <div class="accordion" (click)="accordionClick(1)">
+        <div class="accordion-header">
+          <span>Bancario</span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Asistimos a nuestros clientes en la apertura de cuentas bancarias
+            personales y de negocios en entidades de Estados Unidos, brindando a
+            nuestros clientes la base financiera necesaria para llevar a cabo
+            sus inversiones con confianza y eficiencia.
+          </p>
+        </div>
+      </div>
+      <div class="accordion" (click)="accordionClick(2)">
+        <div class="accordion-header">
+          <span>Contable</span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Contamos con un equipo de expertos profesionales contables que
+            brindan asesoramiento integral a nuestros clientes en materia
+            impositiva y fiscal de los Estados Unidos.
+          </p>
+        </div>
+      </div>
+      <div class="accordion" (click)="accordionClick(3)">
+        <div class="accordion-header">
+          <span>Análisis Económico y Financiero</span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Brindamos constante asesoramiento financiero y económico sobre las
+            variables propias de cada inversión, como de mercado o de las
+            carteras de nuestros clientes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <app-investment-process-testimonies
+    [hideTestimonies]="true"
+  ></app-investment-process-testimonies>
+</section>
+<section>
+  <app-experts-team></app-experts-team>
+</section>
+<section>
+  <app-newsletter-form></app-newsletter-form>
+</section>
