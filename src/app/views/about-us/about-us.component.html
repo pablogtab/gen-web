@@ -1,1 +1,162 @@
-<p>about-us works!</p>
+<article>
+  <h1>Nosotros</h1>
+  <h3>
+    Te acompañamos en cada etapa del proceso de inversión, desde la presentación
+    de propuestas y la definición del perfil de inversor, hasta el armado de la
+    cartera y la configuración de la estructura legal, contable, económica y
+    financiera.
+  </h3>
+  <button>Quiero invertir</button>
+  <img
+    src="assets/about-us-background.png"
+    alt="background"
+    class="background-1"
+  />
+</article>
+<section class="step-2">
+  <h3 class="info">EQUIPO DE EXPERTOS</h3>
+  <h1 class="info">Nuestra misión</h1>
+  <p class="info">
+    Nos dedicamos a construir una comunidad sólida de negocios e inversores a
+    largo plazo. Nuestra misión se fundamenta en la transparencia de los
+    procedimientos y operaciones, respaldada por un análisis profundo y
+    confiable de las diversas oportunidades de inversión. Priorizamos la
+    sustentabilidad en cada paso, manteniendo los más altos estándares éticos
+    contribuyendo así al desarrollo responsable del mercado.
+  </p>
+  <div class="container">
+    <div class="accordion-container">
+      <div class="accordion" (click)="accordionClick(0)">
+        <div class="accordion-header">
+          <span>Ayudar a tu capital</span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Nuestra principal meta es que tu patrimonio crezca con el tiempo,
+            priorizando la seguridad, el respaldo y la transparencia en cada
+            paso.
+          </p>
+        </div>
+      </div>
+      <div class="accordion" (click)="accordionClick(1)">
+        <div class="accordion-header">
+          <span>Construir relaciones duraderas </span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Estamos comprometidos en establecer conexiones sólidas y duraderas.
+            No vendemos productos de inversión, trabajamos juntos en un objetivo
+            de desarrollo.
+          </p>
+        </div>
+      </div>
+      <div class="accordion" (click)="accordionClick(2)">
+        <div class="accordion-header">
+          <span>Nuestro Gol: Comprender y Superar Expectativas</span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Lograr comprender con exactitud las necesidades particulares de cada
+            uno de nuestros clientes y asistirlos en la concreción de sus
+            espectativas.
+          </p>
+        </div>
+      </div>
+      <div class="accordion" (click)="accordionClick(3)">
+        <div class="accordion-header">
+          <span>Nuestro pilar: La confianza </span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Nuestra meta es generar los mejores negocios, fundamentados en la
+            confianza como pilar fundamental. Trabajamos incansablemente para
+            establecer relaciones sólidas, transparentes e íntegras, creando un
+            entorno propicio para el éxito conjunto en todas nuestras
+            operaciones.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="img-container">
+      <img src="assets/about-us-1.png" alt="" />
+    </div>
+  </div>
+</section>
+
+<section class="step-2 dark">
+  <h1 class="info">Nuestra visión</h1>
+  <p class="info">
+    Ser la guía de excelencia en asesoría de inversión, siendo reconocidos por
+    nuestra transparencia y ética. Trabajamos de cerca con cada cliente,
+    proporcionando información clara y concisa que les permite tomar decisiones
+    financieras confiables. Buscamos no solo ser asesores, sino socios en el
+    éxito financiero de nuestros clientes, forjando relaciones sólidas basadas
+    en la confianza y el compromiso personalizado.
+  </p>
+  <div class="container">
+    <div class="img-container">
+      <img src="assets/about-us-1.png" alt="" />
+    </div>
+    <div class="accordion-container">
+      <div class="accordion accordion-light" (click)="accordion2Click(0)">
+        <div class="accordion-header">
+          <span>DESARROLLO</span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Creemos y buscamos desarrollar nuevas oportunidades de negocios
+            constantemente.
+          </p>
+        </div>
+      </div>
+      <div class="accordion accordion-light" (click)="accordion2Click(1)">
+        <div class="accordion-header">
+          <span>CRECIMIENTO</span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Buscamos crecer junto a nuestra comunidad de negocios, agregando
+            constantemente Valor a nuestros servicios y productos de inversión.
+          </p>
+        </div>
+      </div>
+      <div class="accordion accordion-light" (click)="accordion2Click(2)">
+        <div class="accordion-header">
+          <span>SUSTENTABILIDAD</span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Analizamos el mercado en búsqueda de oportunidades con horizontes a
+            largo plazo, dando sustentabilidad a nuestros negocios.
+          </p>
+        </div>
+      </div>
+      <div class="accordion accordion-light" (click)="accordion2Click(3)">
+        <div class="accordion-header">
+          <span>RETORNOS</span>
+          <mat-icon class="icon">keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Apuntamos a retornos seguros pero eficientes, que superen la media
+            en expectativas para cada sector de la economía.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <app-experts-team></app-experts-team>
+</section>
+<section>
+  <app-newsletter-form></app-newsletter-form>
+</section>

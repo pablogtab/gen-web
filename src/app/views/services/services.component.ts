@@ -1,8 +1,8 @@
-import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { InvestmentProcessTestimoniesComponent } from '../../components/investment-process-testimonies/investment-process-testimonies.component';
-import { PartnersComponent } from '../partners/partners.component';
+
 import { ExpertsTeamComponent } from '../../components/experts-team/experts-team.component';
+import { InvestmentProcessTestimoniesComponent } from '../../components/investment-process-testimonies/investment-process-testimonies.component';
 import { NewsletterFormComponent } from '../../components/newsletter-form/newsletter-form.component';
 
 @Component({

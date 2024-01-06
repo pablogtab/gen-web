@@ -14,25 +14,25 @@ export class InvestmentsRentACarComponent {
     step1: {
       buttonLink: '',
       imageUrl: 'assets/investment-2-1.png',
-      subtitle: 'Inversión mas conservadora. Posibilidad de generar apalancamiento para reinversión.',
+      subtitle: ' Inversión de retornos mensuales fijos garantizados durante el plazo determinado.',
       title: 'Invertir en Rent a car'
     },
     step2: {
       preTitle: 'INVERTIR EN RENT A CAR',
-      title: 'Retornos fijos garantizados',
-      paragraph: 'Invierte en compañía con trayectoria de más de 12 años operando en la plaza y en pleno proceso de expansión. Es una inversión de retornos mensuales fijos garantizados durante el plazo determinado.',
+      title: 'Retornos mensuales fijos y garantizados por contrato',
+      paragraph: ' Invierte en una compañía con trayectoria de más de 12 años operando en Florida y en pleno proceso de crecimiento y expansión.',
       imgUrl: 'assets/investment-2-2.png',
       buttons: [
-        { title: 'Download FarmVest', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-mobile-download.png' },
-        { title: 'Create account', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-person-create-account.png' },
-        { title: 'Link your bank account', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-bank.png' },
-        { title: 'Start Investing', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-currency.png' },
+        { title: 'Retorno fijo mensual', subtitle: 'Recibe retornos mensuales fijos por tu aporte de capital para flota de la compañía.', imgUrl: 'assets/icon-mobile-download.png' },
+        { title: 'Previsibilidad', subtitle: ' Garantiza tus cashflow durante el ciclo de duración de la inversión.', imgUrl: 'assets/icon-person-create-account.png' },
+        { title: 'Crecimiento y desarrollo', subtitle: 'Haz crecer tu capital acompañando la expansión y progreso de una importante compañía americana.', imgUrl: 'assets/icon-bank.png' },
+        { title: 'Seguridad', subtitle: 'Desarrolla tu patrimonio mientras contratos e instrumentos oficiales de Florida respaldan tu inversión.', imgUrl: 'assets/icon-currency.png' },
       ]
     },
     step3: [
-      { icon: 'assets/icon-building.png', link: '/inversiones/construccion', title: 'Construcción', subtitle: 'Inversión mas conservadora. Posibilidad de generar apalancamiento para reinversión.' },
-      { icon: 'assets/icon-house.png', link: '/inversiones/real-estate', title: 'Real Estate', subtitle: 'Inversión de retornos mensuales fijos garantizados durante el plazo determinando.' },
-      { icon: 'assets/icon-storage.png', link: '/inversiones/storage', title: 'Storage', subtitle: 'Inversion conservadora de alta seguridad y previsibilidad. Respaldada por título de propiedad en EEUU.' },
+      { icon: 'assets/icon-building.png', link: '/inversiones/construccion', title: 'Construcción', subtitle: 'Inversión respaldada por título de propiedad y contratos con alta seguridad jurídica. Proyecto con más de 20 años de horizonte de inversión.' },
+      { icon: 'assets/icon-house.png', link: '/inversiones/real-estate', title: 'Real Estate', subtitle: 'Inversión más conservadora. Posibilidad de generar apalancamiento para reinversión.' },
+      { icon: 'assets/icon-storage.png', link: '/inversiones/storage', title: 'Storage', subtitle: 'Inversión conservadora de alta seguridad y previsibilidad. Respaldada por el título de propiedad en EEUU.' },
     ]
   }
 }

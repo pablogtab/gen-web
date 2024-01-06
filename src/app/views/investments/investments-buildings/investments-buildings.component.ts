@@ -20,19 +20,19 @@ export class InvestmentsBuildingsComponent {
     step2: {
       preTitle: 'INVERTIR EN CONSTRUCCIÓN',
       title: 'Estabilidad y potencial de crecimiento',
-      paragraph: 'Respaldada por la estabilidad y el potencial de crecimiento a largo plazo, este tipo de activos inmobiliarios involucrados tienen documentación legal que certifica la propiedad y los derechos asociados que proporciona seguridad jurídica al inversionista.',
+      paragraph: 'Respaldada por la estabilidad y el potencial de crecimiento a largo plazo, este tipo de activos inmobiliarios tienen documentación legal que certifica la propiedad y los derechos asociados, lo que proporciona seguridad jurídica al inversionista.',
       imgUrl: 'assets/investment-1-2.png',
       buttons: [
-        { title: 'Download FarmVest', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-mobile-download.png' },
-        { title: 'Create account', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-person-create-account.png' },
-        { title: 'Link your bank account', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-bank.png' },
-        { title: 'Start Investing', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-currency.png' },
+        { title: 'Sólidez', subtitle: 'Invertir en ladrillos siempre es una buena inversión.', imgUrl: 'assets/icon-mobile-download.png' },
+        { title: 'Se dueño de tu proyecto', subtitle: 'De principio a fin, serás el dueño 100% de tu proyecto con el respaldo de títulos de propiedad de USA.', imgUrl: 'assets/icon-person-create-account.png' },
+        { title: 'DESARROLLO SUSTENTABLE', subtitle: 'Construimos en zonas de alto crecimiento demográfico con potencial a más de 20 años.', imgUrl: 'assets/icon-bank.png' },
+        { title: 'RETORNOS ALTO RENDIMIENTO', subtitle: 'Logra los mejores resultados de rendimiento dentro del real estate.', imgUrl: 'assets/icon-currency.png' },
       ]
     },
     step3: [
-      { icon: 'assets/icon-car.png', link: '/inversiones/rent-a-car', title: 'Rent a car', subtitle: 'Inversión mas conservadora. Posibilidad de generar apalancamiento para reinversión.' },
-      { icon: 'assets/icon-house.png', link: '/inversiones/real-estate', title: 'Real Estate', subtitle: 'Inversión de retornos mensuales fijos garantizados durante el plazo determinando.' },
-      { icon: 'assets/icon-storage.png', link: '/inversiones/storage', title: 'Storage', subtitle: 'Inversion conservadora de alta seguridad y previsibilidad. Respaldada por título de propiedad en EEUU.' },
+      { icon: 'assets/icon-house.png', link: '/inversiones/real-estate', title: 'Real Estate', subtitle: ' Inversión conservadora. Posibilidad de generar apalancamiento para reinversión.' },
+      { icon: 'assets/icon-car.png', link: '/inversiones/rent-a-car', title: 'Rent a car', subtitle: 'Inversión de retornos mensuales fijos garantizados durante el plazo determinado.' },
+      { icon: 'assets/icon-storage.png', link: '/inversiones/storage', title: 'Storage', subtitle: 'Inversión conservadora de alta seguridad y previsibilidad. Respaldada por el título de propiedad en EEUU.' },
     ]
   }
 }

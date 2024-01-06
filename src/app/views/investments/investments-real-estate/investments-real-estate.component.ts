@@ -20,19 +20,19 @@ export class InvestmentsRealEstateComponent {
     step2: {
       preTitle: 'INVERTIR EN REAL ESTATE',
       title: 'Capitalización para reinversión',
-      paragraph: 'Inversión más conservadora. Bajos retornos, no garantizados pero posibilidad de apreciación en el tiempo. Posibilidad de generar apalancamiento para reinversión',
+      paragraph: 'Inversión más conservadora. Retornos moderados, no garantizados, pero con posibilidad de apreciación en el tiempo. Posibilidad de generar apalancamiento para reinversión.',
       imgUrl: 'assets/investment-3-2.png',
       buttons: [
-        { title: 'Download FarmVest', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-mobile-download.png' },
-        { title: 'Create account', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-person-create-account.png' },
-        { title: 'Link your bank account', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-bank.png' },
-        { title: 'Start Investing', subtitle: 'Start by downloading FarmVest app on your Android or IOS', imgUrl: 'assets/icon-currency.png' },
+        { title: 'Conservadora y de respaldo', subtitle: 'Respaldada por sólidos contratos e instrumentos financieros, garantizando la seguridad de tus fondos.', imgUrl: 'assets/icon-mobile-download.png' },
+        { title: 'Apalancamiento financiero bancario', subtitle: 'Posibilidad de utilizar las mismas propiedades como garantía para apalancamiento financiero bancario.', imgUrl: 'assets/icon-person-create-account.png' },
+        { title: 'Dinamismo en Ingresos y Egresos', subtitle: 'Modalidades de ingreso/egreso altamente dinámicas por el mercado.', imgUrl: 'assets/icon-bank.png' },
+        { title: 'Sostenible a Largo Plazo', subtitle: 'Inversión a largo plazo con una previsión sólida de apreciación, asegurando crecimiento constante y sostenible de tu capital.', imgUrl: 'assets/icon-currency.png' },
       ]
     },
     step3: [
       { icon: 'assets/icon-building.png', link: '/inversiones/construccion', title: 'Construcción', subtitle: 'Inversión mas conservadora. Posibilidad de generar apalancamiento para reinversión.' },
-      { icon: 'assets/icon-car.png', link: '/inversiones/rent-a-car', title: 'Rent a car', subtitle: 'Inversión mas conservadora. Posibilidad de generar apalancamiento para reinversión.' },
-      { icon: 'assets/icon-storage.png', link: '/inversiones/storage', title: 'Storage', subtitle: 'Inversion conservadora de alta seguridad y previsibilidad. Respaldada por título de propiedad en EEUU.' },
+      { icon: 'assets/icon-car.png', link: '/inversiones/rent-a-car', title: 'Rent a car', subtitle: 'Inversión de retornos mensuales fijos garantizados durante el plazo determinado.' },
+      { icon: 'assets/icon-storage.png', link: '/inversiones/storage', title: 'Storage', subtitle: 'Inversion conservadora de alta seguridad y previsibilidad. Respaldada por el título de propiedad en EEUU.' },
     ]
   }
 }
