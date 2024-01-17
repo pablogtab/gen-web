@@ -164,6 +164,15 @@ article {
     height: auto;
 }
 
+.why-gen-module {
+    margin-top: -275px;
+    z-index: -10
+}
+
+.experts-module {
+    margin-top: 170px
+}
+
 
 @media (min-width: 1000px) and (max-width: 1365px) {
     article {
@@ -222,6 +231,12 @@ article {
                 }
             }
         }
+    }
+
+
+    .why-gen-module {
+        margin-top: -220px;
+        z-index: -10
     }
 
 }
@@ -285,10 +300,7 @@ article {
 }
 
 
-.why-gen-module {
-    margin-top: -220px;
-    z-index: -10
-}
+
 
 
 
@@ -350,6 +362,9 @@ article {
         }
     }
 
+    .experts-module {
+        margin-top: 10px
+    }
 
     .why-gen-module {
         margin-top: -150px;

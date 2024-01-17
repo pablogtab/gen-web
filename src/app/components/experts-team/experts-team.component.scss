@@ -30,6 +30,10 @@
         width: 74%;
 
     }
+
+    .mobile {
+        display: none;
+    }
 }
 
 .experts {
@@ -241,8 +245,115 @@
 }
 
 
-@media screen and (max-width: 1000px) {
-    * {
-        display: none !important
+@media screen and (max-width: 768px) {
+    .info {
+        h3 {
+            font-size: 22px;
+        }
+
+        h1 {
+            font-size: 40px;
+            width: 70%;
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        .mobile {
+            font-size: 20px;
+            display: block;
+            width: 90%;
+        }
+    }
+
+
+    .experts {
+        margin-top: 2%;
+        margin-bottom: 10%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 5%;
+        gap: 40px;
+        justify-content: space-between;
+
+        .expert-container {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            text-align: left;
+            align-items: flex-start;
+
+            .img-container {
+                position: relative;
+                width: 50vw;
+
+                .buttons {
+                    box-sizing: border-box;
+                    position: absolute;
+                    padding: 0 10%;
+                    bottom: 40px;
+                    width: 100%;
+
+                    .linkedin {
+                        display: none;
+                    }
+
+                    button {
+                        position: absolute;
+                        background-color: #014F5B;
+                        color: white;
+                        border: none;
+                        width: 40vw;
+                        height: 45px;
+                        font-family: Montserrat;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        border-radius: 22px;
+                        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+
+            img.expert {
+                width: 50vw;
+            }
+
+
+            h2 {
+                width: 40vw;
+                font-size: 20px;
+                color: #2B2B2B;
+                font-weight: 600;
+                margin-left: 2vw;
+            }
+
+            h3 {
+                position: absolute;
+                top: 70px;
+                left: 52vw;
+                font-weight: 400;
+                font-style: italic;
+                width: 40vw;
+                font-size: 20px;
+            }
+
+        }
+
+        :nth-child(2) {
+            flex-direction: row-reverse !important;
+
+            h3 {
+                left: 2vw;
+            }
+
+        }
+
     }
 }

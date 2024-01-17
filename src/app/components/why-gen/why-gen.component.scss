@@ -532,6 +532,7 @@ article {
             .motive-2 {
                 border-radius: 10px;
                 height: 40vw;
+                max-height: 150px;
                 width: 150px;
 
                 .circle-container {
@@ -604,13 +605,51 @@ article {
         }
 
         .motives-container-2 {
-            display: none;
+
+            height: auto;
+            gap: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .motive {
+                width: 40%;
+                margin: 0;
+
+                height: auto;
+
+                img {
+                    width: 15vw;
+                    margin-left: 9vw;
+                }
+
+                h3 {
+                    margin-top: 5px;
+                    margin-bottom: 0px;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: 300;
+                    text-align: center;
+                }
+
+                p {
+                    display: none;
+                }
+            }
+
+            .align-end {
+                align-self: flex-start;
+            }
+
+            .line {
+                display: none;
+            }
         }
 
 
         .background-2 {
             width: 100%;
-            padding-top: 180%;
+            padding-top: 200%;
 
             .waves {
                 top: 22%;
