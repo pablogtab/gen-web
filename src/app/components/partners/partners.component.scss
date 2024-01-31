@@ -38,7 +38,40 @@
 
 
 @media screen and (max-width: 1000px) {
-    * {
-        display: none !important
+    .container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        h3 {
+            width: 80%;
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #606060;
+        }
+
+        .partners-container {
+            margin-top: 40px;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0% 10%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 100px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        img {
+            width: 27%;
+            filter: grayscale(1)
+        }
     }
 }
