@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class ExpertsTeamComponent {
 
+  navigate(url: string) {
+    //open url in new window
+
+    window.open(url, '_blank');
+  }
 }

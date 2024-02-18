@@ -11,27 +11,31 @@
     margin-bottom: 75px;
 
     h3 {
-        font-family: Poppins;
-        font-size: 25px;
+        font-family: Montserrat;
+        font-size: 20px;
         font-weight: 500;
         line-height: 24px;
-        letter-spacing: 0em;
+        letter-spacing: 0.15em;
         text-align: center;
-        color: #606060;
     }
 
     .partners-container {
         margin-top: 75px;
         box-sizing: border-box;
         width: 100%;
-        padding: 0% 10%;
+        padding: 0% 15%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        :nth-child(3) {
+            width: 25%;
+            margin-right: -5%;
+        }
     }
 
     img {
-        width: 11.5%;
+        width: 20%;
         filter: grayscale(1)
     }
 }
@@ -47,7 +51,7 @@
         margin-bottom: 20px;
 
         h3 {
-            width: 80%;
+            width: 90%;
             font-family: Poppins;
             font-size: 18px;
             font-weight: 500;
@@ -61,16 +65,22 @@
             margin-top: 40px;
             box-sizing: border-box;
             width: 100%;
-            padding: 0% 10%;
-            display: flex;
-            flex-wrap: wrap;
+            padding: 0% 8%;
             flex-basis: 100px;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            gap: 20px;
+
+            :nth-child(3) {
+                margin-top: 10px;
+                width: 80%;
+                margin-right: 0%;
+            }
         }
 
         img {
-            width: 27%;
+            width: 60%;
             filter: grayscale(1)
         }
     }

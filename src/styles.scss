@@ -66,10 +66,30 @@ body {
 }
 
 
-h1{
+h1 {
   font-size: 60px;
 }
 
-h3{
+h3 {
   font-size: 25px;
+}
+
+
+
+.fade-in-move-1s {
+  animation: fadeIn-move 1.5s ease-in forwards;
+  -webkit-animation: fadeIn-move ease 1.5s forwards;
+  -moz-animation: fadeIn-move ease 1.5s forwards;
+  -o-animation: fadeIn-move ease 1.5s forwards;
+  -ms-animation: fadeIn-move ease 1.5s forwards;
+}
+
+@keyframes fadeIn-move {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

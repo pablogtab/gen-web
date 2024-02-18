@@ -10,4 +10,26 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class WhyGenComponent {
 
+  constructor() { }
+
+  ngOnInit() {
+    let observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, { threshold: 0.5 });
+
+
+
+    const elements = document.querySelectorAll('.progress');
+
+    elements.forEach((el) => {
+      observer.observe(el);
+    });
+  }
+
+
+
 }

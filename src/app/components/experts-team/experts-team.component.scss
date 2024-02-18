@@ -43,8 +43,8 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 0 5%;
-    gap: 4%;
+    padding: 0 20%;
+    gap: 10%;
     justify-content: space-between;
 
     .expert-container {
@@ -78,6 +78,10 @@
                     height: 100px;
                     border-radius: 50%;
 
+                    &:hover{
+                        cursor: pointer;
+                    }
+
                     img {
                         width: 60%;
                         height: 60%
@@ -98,6 +102,9 @@
                     text-align: center;
                     border-radius: 22px;
                     box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.2);
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
         }
