@@ -1,6 +1,7 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+
 import { ClickOutsideDirective } from '../../directives/click-outside.directive';
 
 @Component({
@@ -12,8 +13,12 @@ import { ClickOutsideDirective } from '../../directives/click-outside.directive'
 })
 export class NavBarComponent {
 
+  constructor(private router: Router) {
+
+  }
+
   toggle() {
-    
+
     const menu = document.getElementById('link-menu')
     menu?.classList.toggle('active')
 
@@ -32,5 +37,9 @@ export class NavBarComponent {
     const pages = document.getElementById('pages')
     if (pages?.classList.toString().includes('active'))
       pages?.classList.remove('active')
+  }
+
+  quieroInvertir() {
+    this.router.navigate(['contacto'])
   }
 }

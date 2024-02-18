@@ -101,60 +101,30 @@ a:active {
 
 @media screen and (max-width: 1000px) {
     .newsletter-container {
+
         h1 {
-            color: white;
-            margin: 0;
-            font-weight: 500;
-            font-size: 22px;
+            font-size: 30px;
+            text-align: center;
+            width: 80%;
         }
-    
+
         h3 {
             margin-top: 30px;
-            font-family: Montserrat;
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 24px;
-            letter-spacing: 0.2em;
-            text-align: center;
-            color: #99FFCC;
+            font-size: 18px;
         }
-    
+
         .input-container {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            margin-bottom: 70px;
-            margin-top: 30px;
-            width: 90%;
-    
+            margin-bottom: 30px;
+
             input {
-                border: none;
-                border-radius: 10px;
-                width: 90%;
-                font-family: Montserrat;
-                font-size: 22px;
-                font-weight: 500;
-                line-height: 36px;
-                letter-spacing: 0em;
-                padding: 18px;
+                font-size: 20px;
+                padding: 14px;
             }
-    
-            button {
-                padding: 5px;
-                margin-top: 30px;
-                align-self: flex-end;
-                border: none;
-                width: 40%;
-                border-radius: 10px;
-                color: #014F5B;
+
+            a {
+                width: 60%;
                 font-size: 18px;
-                font-family: Montserrat;
-                font-weight: 600;
-                border-radius: 10px;
-                cursor: pointer;
             }
         }
     }
-    
 }

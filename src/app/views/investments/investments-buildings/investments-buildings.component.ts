@@ -25,8 +25,8 @@ export class InvestmentsBuildingsComponent {
       buttons: [
         { title: 'Sólidez', subtitle: 'Invertir en ladrillos siempre es una buena inversión.', imgUrl: 'assets/icon-mobile-download.png' },
         { title: 'Se dueño de tu proyecto', subtitle: 'De principio a fin, serás el dueño 100% de tu proyecto con el respaldo de títulos de propiedad de USA.', imgUrl: 'assets/icon-person-create-account.png' },
-        { title: 'DESARROLLO SUSTENTABLE', subtitle: 'Construimos en zonas de alto crecimiento demográfico con potencial a más de 20 años.', imgUrl: 'assets/icon-bank.png' },
-        { title: 'RETORNOS ALTO RENDIMIENTO', subtitle: 'Logra los mejores resultados de rendimiento dentro del real estate.', imgUrl: 'assets/icon-currency.png' },
+        { title: 'Desarrollo sustentable', subtitle: 'Construimos en zonas de alto crecimiento demográfico con potencial a más de 20 años.', imgUrl: 'assets/icon-bank.png' },
+        { title: 'Retornos de alto rendimiento', subtitle: 'Logra los mejores resultados de rendimiento dentro del real estate.', imgUrl: 'assets/icon-currency.png' },
       ]
     },
     step3: [

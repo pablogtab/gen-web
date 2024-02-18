@@ -1,6 +1,6 @@
 footer {
     background-color: black;
-    padding: 0 8%;
+    padding: 0 6%;
     padding-top: 60px;
     padding-bottom: 30px;
 }
@@ -12,47 +12,98 @@ footer {
     justify-content: flex-start;
     gap: 5%;
 
-
     .img-container {
 
         width: 22%;
 
         p {
+            width: 80%;
             font-family: Montserrat;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 400;
             line-height: 1.8;
             letter-spacing: 0.2;
             text-align: left;
-            color: #FFFFFF80
+            color: #FFFFFF80;
+            margin: 10px 0
+        }
+
+        p.info {
+            color: white;
+
+            img {
+                width: 20px;
+                margin-right: 5px;
+            }
+
+        }
+
+        :last-child {
+            img {
+                filter: grayscale(1) invert(1);
+            }
         }
 
         img {
-            width: 200px;
+            width: 170px;
             height: auto;
         }
     }
 
     .link-container {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
+        position: relative;
 
+        &.inversiones {
+            :first-child {
+                color: white;
+                width: 100%;
+                border-bottom: 1px solid #99FFCC;
+                height: 40px;
+            }
+
+            flex: 2;
+
+            a {
+                min-width: 50%;
+            }
+
+
+        }
+
+        &.about-gen {
+
+            :first-child {
+                color: white;
+                width: 100%;
+                border-bottom: 1px solid #99FFCC;
+                height: 40px;
+            }
+
+            flex: 3;
+
+            a {
+                min-width: 33.33%;
+            }
+        }
+
+
+
+        display: flex;
+        flex-direction: row;
+
+        flex-wrap: wrap;
         color: #FFFFFF80;
         font-family: Montserrat;
-        font-size: 24px;
+        font-size: 20px;
         font-style: italic;
         font-weight: 300;
         letter-spacing: 0.4px;
         text-align: left;
 
 
-        :first-child {
-            color: white;
-        }
-
-
     }
+
+
 }
 
 a,
@@ -68,79 +119,124 @@ a:hover {
 
 .credits {
     width: 100%;
-    text-align: center;
+    text-align: right;
     color: white;
-    margin-top: 60px;
+    margin-top: 0px;
     font-size: 20px;
 }
 
 
 @media (min-width: 1000px) and (max-width: 1365px) {
     footer {
-        padding: 0 6%;
-        padding-top: 25px;
+        padding: 0 4%;
+        padding-top: 30px;
         padding-bottom: 15px;
     }
 
     .footer-container {
+        gap: 3%;
 
         .img-container {
-
-            width: 22%;
+            width: 25%;
 
             p {
-                font-size: 18px;
+                width: 80%;
+                font-size: 16px;
+                text-align: left;
+                color: #FFFFFF80;
+                margin: 10px 0
+            }
+
+            p.info {
+                color: white;
+
+                img {
+                    width: 20px;
+                    margin-right: 5px;
+                }
+
+            }
+
+            :last-child {
+                img {
+                    filter: grayscale(1) invert(1);
+                }
             }
 
             img {
-                width: 120px;
+                width: 170px;
+                height: auto;
             }
         }
 
         .link-container {
-            gap: 20px;
+            position: relative;
             font-size: 16px;
+
         }
+
+
     }
 
     .credits {
-        margin-top: 40px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
 }
 
 @media (min-width: 1366px) and (max-width: 1550px) {
     footer {
-        padding: 0 6%;
-        padding-top: 40px;
-        padding-bottom: 15px;
+        padding-top: 60px;
+        padding-bottom: 30px;
     }
 
     .footer-container {
+        gap: 5%;
 
         .img-container {
-
-            width: 20%;
+            width: 25%;
 
             p {
+                width: 80%;
                 font-size: 18px;
+                text-align: left;
+                color: #FFFFFF80;
+                margin: 10px 0
+            }
+
+            p.info {
+                color: white;
+
+                img {
+                    width: 20px;
+                    margin-right: 5px;
+                }
+
+            }
+
+            :last-child {
+                img {
+                    filter: grayscale(1) invert(1);
+                }
             }
 
             img {
-                width: 150px;
+                width: 170px;
+                height: auto;
             }
         }
 
         .link-container {
-            gap: 25px;
-            font-size: 16px;
+            position: relative;
+            font-size: 18px;
+
         }
+
+
     }
 
     .credits {
-        margin-top: 40px;
-        font-size: 14px;
+        font-size: 18px;
     }
 
 }
@@ -167,6 +263,7 @@ a:hover {
             width: 100%;
 
             p {
+                width: 100%;
                 font-family: Montserrat;
                 font-size: 22px;
                 font-weight: 400;
@@ -181,14 +278,21 @@ a:hover {
                 width: 50%;
                 margin-left: 25%;
             }
+
+            p.info {
+                display: none !important;
+            }
         }
+
         .link-container {
             display: none !important;
         }
 
     }
+
     .credits {
         margin-top: 10px;
-        font-size: 18px;
+        font-size: 16px;
+        text-align: center;
     }
 }

@@ -4,6 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ExpertsTeamComponent } from '../../components/experts-team/experts-team.component';
 import { InvestmentProcessTestimoniesComponent } from '../../components/investment-process-testimonies/investment-process-testimonies.component';
 import { NewsletterFormComponent } from '../../components/newsletter-form/newsletter-form.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-services',
@@ -15,7 +16,7 @@ import { NewsletterFormComponent } from '../../components/newsletter-form/newsle
 export class ServicesComponent {
 
 
-  constructor() {
+  constructor(private router: Router) {
 
   }
 
@@ -24,6 +25,10 @@ export class ServicesComponent {
     let accordions = Array.from(document.getElementsByClassName('accordion'))
     accordions.filter((div, index) => index !== i).forEach(acc => { acc.classList.remove('active') })
     accordions[i].classList.toggle('active')
+  }
+
+  quieroInvertir() {
+    this.router.navigate(['contacto'])
   }
 
 }

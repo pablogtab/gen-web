@@ -9,6 +9,7 @@ import {
 import { NewsletterFormComponent } from '../../components/newsletter-form/newsletter-form.component';
 import { PartnersComponent } from '../../components/partners/partners.component';
 import { WhyGenComponent } from '../../components/why-gen/why-gen.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -24,7 +25,11 @@ import { WhyGenComponent } from '../../components/why-gen/why-gen.component';
 export class HomeComponent {
 
 
-  constructor() {
+  constructor(private router: Router) {
 
+  }
+
+  quieroInvertir() {
+    this.router.navigate(['contacto'])
   }
 }

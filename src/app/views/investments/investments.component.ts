@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { WhyGenComponent } from '../../components/why-gen/why-gen.component';
 import { NewsletterFormComponent } from '../../components/newsletter-form/newsletter-form.component';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-investments',
@@ -14,10 +14,31 @@ export class InvestmentsComponent {
 
   @Input() params!: ParamsInvestmentScreen;
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  ngAfterViewInit() {
+
+    let observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.button-container').forEach((element) => {
+      observer.observe(element);
+    });
+
+
+
+  }
+
+
+  quieroInvertir() {
+    this.router.navigate(['contacto'])
+  }
 }
-
-
 
 
 

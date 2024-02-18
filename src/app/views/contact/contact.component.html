@@ -1,1 +1,83 @@
-<p>contact works!</p>
+<article>
+  <h1>Contáctanos</h1>
+  <img
+    src="assets/contact-background.png"
+    alt="background"
+    class="background-1"
+  />
+</article>
+
+<section class="contact">
+  <h1>¡Conéctate con nosotros!</h1>
+  <div class="contact-card">
+    <div class="info">
+      <div class="info-container">
+        <div class="row">
+          <div class="icon">
+            <img src="assets/icon-envelope.png" alt="" />
+          </div>
+          <p>info&#64;genprojectusa.com</p>
+        </div>
+        <div class="row">
+          <div class="icon">
+            <img src="assets/icon-phone-call.png" alt="" />
+          </div>
+          <p>
+            <span class="title">PHONE NUMBER</span>
+            <br />
+            +1 206-214-2298
+          </p>
+        </div>
+        <div class="row">
+          <div class="icon">
+            <img src="assets/icon-map-pin.png" alt="" />
+          </div>
+          <p>
+            <span class="title">HEAD OFFICE</span>
+            <br />
+            19 avenue Franklin Willings 19901 Boston
+          </p>
+        </div>
+      </div>
+      <div class="background">
+        <img src="assets/contact-background-2.png" alt="" />
+      </div>
+    </div>
+    <!-- <a href="mailto:pablo.g.taborda@gmail.com?subject=Subject&body=message"
+            >Enviar</a
+            > -->
+
+    <div class="form">
+      <div class="group">
+        <div class="input-form">
+          <span>Nombre</span>
+          <input  type="text" />
+        </div>
+        <div class="input-form">
+          <span>Email</span>
+          <input type="email" />
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="input-form">
+          <span>Asunto</span>
+          <input [(ngModel)]="subject" type="text" />
+        </div>
+      </div>
+      <div class="group" style="flex: 3">
+        <div class="input-form">
+          <span>Mensaje</span>
+          <textarea [(ngModel)]="message" style="resize: none" type="text"></textarea>
+        </div>
+      </div>
+      <div class="group">
+        <a href="mailto:{{ email }}?subject={{ subject }}&body={{ message }}"
+          >Enviar Mensaje <img src="assets/icon-arrow.png"
+        /></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-newsletter-form></app-newsletter-form>

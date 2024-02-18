@@ -6,7 +6,7 @@
     cartera y la configuración de la estructura legal, contable, económica y
     financiera.
   </h3>
-  <button>Quiero invertir</button>
+  <button (click)="quieroInvertir()">Quiero invertir</button>
   <img
     src="assets/about-us-background.png"
     alt="background"
@@ -15,17 +15,17 @@
 </article>
 <section class="step-2">
   <h3 class="info">EQUIPO DE EXPERTOS</h3>
-  <h1 class="info">Nuestra misión</h1>
+  <h1 class="info">Nuestra visión</h1>
   <p class="info">
-    Nos dedicamos a construir una comunidad sólida de negocios e inversores a
-    largo plazo. Nuestra misión se fundamenta en la transparencia de los
-    procedimientos y operaciones, respaldada por un análisis profundo y
-    confiable de las diversas oportunidades de inversión. Priorizamos la
-    sustentabilidad en cada paso, manteniendo los más altos estándares éticos
-    contribuyendo así al desarrollo responsable del mercado.
+    Nos comprometemos a ser líderes en el asesoramiento, gestión y
+    administración de inversiones de quienes eligen invertir en la economía real
+    de Estados Unidos. Buscamos ser reconocidos como el socio estratégico de
+    confianza, proporcionando asesoramiento profesional y constante basado en la
+    responsabilidad, honestidad y transparencia.
   </p>
   <div class="container">
-    <div class="accordion-container">
+    <!-- <div class="accordion-container">
+    
       <div class="accordion" (click)="accordionClick(0)">
         <div class="accordion-header">
           <span>Ayudar a tu capital</span>
@@ -80,6 +80,26 @@
           </p>
         </div>
       </div>
+    </div> -->
+    <div class="text-container">
+      <p>
+        Nos esforzamos por ser la opción preferida de los inversionistas que
+        buscan maximizar el valor de sus inversiones, mediante una combinación
+        única de <b>experiencia, dedicación y compromiso.</b>
+      </p>
+      <p>
+        Buscamos ser pioneros en el sector, creando
+        <b>soluciones innovadoras</b> que impulsen el éxito financiero de
+        nuestros clientes y contribuyan al
+        <b>crecimiento sostenible de la economía global.</b>
+      </p>
+      <p>
+        Con una visión clara hacia el futuro, nos comprometemos a seguir
+        evolucionando y adaptándonos a un entorno cambiante, manteniendo siempre
+        nuestros valores de
+        <b>responsabilidad, honestidad y transparencia</b> como guía en todo lo
+        que hacemos. 
+      </p>
     </div>
     <div class="img-container">
       <img src="assets/about-us-1.png" alt="" />
@@ -88,14 +108,13 @@
 </section>
 
 <section class="step-2 dark">
-  <h1 class="info">Nuestra visión</h1>
+  <h1 class="info">Nuestra misión</h1>
   <p class="info">
-    Ser la guía de excelencia en asesoría de inversión, siendo reconocidos por
-    nuestra transparencia y ética. Trabajamos de cerca con cada cliente,
-    proporcionando información clara y concisa que les permite tomar decisiones
-    financieras confiables. Buscamos no solo ser asesores, sino socios en el
-    éxito financiero de nuestros clientes, forjando relaciones sólidas basadas
-    en la confianza y el compromiso personalizado.
+    Nuestra misión es proporcionar asesoramiento experto, gestión eficiente y
+    administración transparente de inversiones en la economía real de Estados
+    Unidos. Nos comprometemos a ofrecer soluciones personalizadas y orientadas a
+    resultados que maximicen el valor de las inversiones de nuestros clientes,
+    mientras moderamos los riesgos y promovemos el crecimiento sostenible
   </p>
   <div class="container">
     <div class="img-container">
@@ -104,49 +123,55 @@
     <div class="accordion-container">
       <div class="accordion accordion-light" (click)="accordion2Click(0)">
         <div class="accordion-header">
-          <span>DESARROLLO</span>
+          <span>Aumentar tu capital</span>
           <mat-icon class="icon">keyboard_arrow_down</mat-icon>
         </div>
         <div class="accordion-content">
           <p>
-            Creemos y buscamos desarrollar nuevas oportunidades de negocios
-            constantemente.
+            Nuestra principal meta es que tu patrimonio crezca brindando un
+            servicio de alta calidad respaldado por un profundo conocimiento del
+            mercado y una comprensión integral de sus necesidades financieras y
+            objetivos a largo plazo.
           </p>
         </div>
       </div>
       <div class="accordion accordion-light" (click)="accordion2Click(1)">
         <div class="accordion-header">
-          <span>CRECIMIENTO</span>
+          <span>Ser tus socios de confianza</span>
           <mat-icon class="icon">keyboard_arrow_down</mat-icon>
         </div>
         <div class="accordion-content">
           <p>
-            Buscamos crecer junto a nuestra comunidad de negocios, agregando
-            constantemente Valor a nuestros servicios y productos de inversión.
+            Trabajamos incansablemente para establecer relaciones sólidas,
+            transparentes e íntegras, creando un entorno propicio para el éxito
+            conjunto en todas nuestras operaciones.
           </p>
         </div>
       </div>
       <div class="accordion accordion-light" (click)="accordion2Click(2)">
         <div class="accordion-header">
-          <span>SUSTENTABILIDAD</span>
+          <span>Construir relaciones duraderas</span>
           <mat-icon class="icon">keyboard_arrow_down</mat-icon>
         </div>
         <div class="accordion-content">
           <p>
-            Analizamos el mercado en búsqueda de oportunidades con horizontes a
-            largo plazo, dando sustentabilidad a nuestros negocios.
+            Estamos comprometidos en establecer conexiones sólidas y duraderas.
+            No vendemos productos de inversión, trabajamos juntos en tu objetivo
+            de desarrollo económico.
           </p>
         </div>
       </div>
       <div class="accordion accordion-light" (click)="accordion2Click(3)">
         <div class="accordion-header">
-          <span>RETORNOS</span>
+          <span>Impulsar el desarrollo económico</span>
           <mat-icon class="icon">keyboard_arrow_down</mat-icon>
         </div>
         <div class="accordion-content">
           <p>
-            Apuntamos a retornos seguros pero eficientes, que superen la media
-            en expectativas para cada sector de la economía.
+            Nos dedicamos a impulsar el desarrollo económico y el progreso tanto
+            de nuestros clientes como de las comunidades donde operamos,
+            contribuyendo positivamente al crecimiento y la prosperidad regional
+            desde nuestra sede en Florida, Estados Unidos.
           </p>
         </div>
       </div>
