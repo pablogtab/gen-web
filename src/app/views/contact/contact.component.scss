@@ -111,16 +111,18 @@ article {
                 }
             }
 
-
             .background {
                 top: 0;
                 width: 100%;
                 position: absolute;
+                pointer-events: none;
 
                 img {
                     width: 100%;
                 }
             }
+
+
         }
 
         .form {
@@ -222,12 +224,12 @@ article {
 }
 
 @media (min-width: 1000px) and (max-width: 1365px) {
-   
+
     .contact {
         h1 {
             font-size: 36px;
         }
-    
+
         .contact-card {
             display: flex;
             flex-direction: row;
@@ -235,35 +237,35 @@ article {
             border-radius: 40px;
             overflow: hidden;
             min-height: 460px;
-    
-    
+
+
             .info {
                 flex: 4;
                 gap: 20px;
-    
+
                 .info-container {
                     display: flex;
                     flex-direction: column;
                     gap: 20px;
-    
+
                     .row {
                         gap: 20px;
 
                     }
                 }
-    
-    
+
+
                 .background {
                     top: 0;
                     width: 100%;
                     position: absolute;
-    
+
                     img {
                         width: 100%;
                     }
                 }
             }
-    
+
             .form {
                 overflow: hidden;
                 flex: 5;
@@ -273,7 +275,8 @@ article {
                 justify-content: space-between;
                 padding: 60px;
                 gap: 20px;
-    
+
+
                 .group {
                     height: 100%;
                     flex: 1;
@@ -281,13 +284,13 @@ article {
                     flex-direction: row;
                     gap: 20px;
                 }
-    
+
                 .input-form {
                     flex: 1;
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
-    
+
                     input {
                         font-family: inherit;
                         height: 40px;
@@ -295,7 +298,7 @@ article {
                         border-radius: 10px;
                         padding-left: 10px;
                     }
-    
+
                     textarea {
                         flex: 1;
                         font-family: inherit;
@@ -305,7 +308,7 @@ article {
                         padding-bottom: 0px;
                     }
                 }
-    
+
                 a {
                     background-color: #014F5B;
                     color: white;
@@ -316,28 +319,86 @@ article {
                     cursor: pointer;
                     transition: 0.3s;
                     font-family: inherit;
-    
+
                     &:hover {
                         background-color: #99FFCC;
                         color: #014F5B;
                         font-weight: 600;
-    
+
                         img {
                             transform: scaleX(0);
                             transition: all 0.3s ease-in-out;
                         }
                     }
-    
+
                     img {
                         width: 20px;
                     }
                 }
-    
+
             }
         }
     }
-    
+
 }
 
 
-@media screen and (max-width: 1000px) {}
+
+@media only screen and (max-width: 1000px) {
+    article {
+        display: none;
+    }
+
+    .contact {
+        h1 {
+            font-size: 36px;
+        }
+
+        .contact-card {
+            display: flex;
+            flex-direction: column;
+            margin: 40px 8%;
+            border-radius: 40px;
+            overflow: hidden;
+
+            .info {
+                padding-top: 20px;
+
+                .info-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .row {
+                        gap: 20px;
+
+                        .icon {
+                            width: 40px;
+                            height: 40px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+
+            .form {
+                display: flex;
+                justify-content: flex-start;
+                padding: 20px;
+                min-height: 600px;
+                gap: 20px;
+                .input-form{
+                    margin: 0;
+                    padding: 0;
+                }
+                .group {
+                    flex-direction: column;
+                    gap: 0px;
+                }
+
+            }
+        }
+
+    }
+
+}

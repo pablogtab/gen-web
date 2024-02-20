@@ -11,6 +11,9 @@
   <h1>¡Conéctate con nosotros!</h1>
   <div class="contact-card">
     <div class="info">
+      <div class="background">
+        <img src="assets/contact-background-2.png" alt="" />
+      </div>
       <div class="info-container">
         <div class="row">
           <div class="icon">
@@ -39,9 +42,6 @@
           </p>
         </div>
       </div>
-      <div class="background">
-        <img src="assets/contact-background-2.png" alt="" />
-      </div>
     </div>
     <!-- <a href="mailto:pablo.g.taborda@gmail.com?subject=Subject&body=message"
             >Enviar</a
@@ -51,7 +51,7 @@
       <div class="group">
         <div class="input-form">
           <span>Nombre</span>
-          <input  type="text" />
+          <input type="text" />
         </div>
         <div class="input-form">
           <span>Email</span>
@@ -68,7 +68,11 @@
       <div class="group" style="flex: 3">
         <div class="input-form">
           <span>Mensaje</span>
-          <textarea [(ngModel)]="message" style="resize: none" type="text"></textarea>
+          <textarea
+            [(ngModel)]="message"
+            style="resize: none"
+            type="text"
+          ></textarea>
         </div>
       </div>
       <div class="group">

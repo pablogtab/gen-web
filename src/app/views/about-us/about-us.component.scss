@@ -70,7 +70,7 @@ article {
     p.info {
         margin-left: 10%;
         width: 75%;
-        font-family: Montserrat;
+        font-family: Poppins;
         font-size: 25px;
         font-weight: 400;
         line-height: 1.5;
@@ -180,6 +180,7 @@ article {
             p {
                 margin-top: 0;
             }
+
             color: #808080;
             width: 40%;
 
@@ -204,8 +205,6 @@ article {
 
         p {
             color: white;
-            width: 90%;
-            margin-left: 5%;
         }
 
         .container .accordion-container .accordion {
@@ -401,4 +400,132 @@ article {
         }
     }
 
+}
+
+
+@media only screen and (max-width: 1000px) {
+    article {
+        background-color: black;
+        min-height: 0;
+
+
+        img {
+            opacity: 0.9;
+            position: absolute;
+            width: 160%;
+            margin-left: -15%;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+            line-height: 1.2;
+        }
+
+        button {
+            margin-top: 3%;
+            height: 60px;
+            font-size: 18px;
+            width: 30%;
+            margin-bottom: 3%;
+        }
+    }
+
+    .step-2 {
+
+        max-height: none;
+        padding: 40px 0;
+        margin: 0;
+        position: relative;
+        width: 100%;
+
+        h1.info {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        h3.info {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        p.info {
+            margin: 0;
+            padding: 0;
+            width: 90%;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .container {
+            height: auto;
+            margin: 0;
+            width: 90%;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            .img-container {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .text-container {
+                width: 100%;
+                margin-bottom: 5%;
+
+                p {
+                    width: 100%;
+                    font-size: 16px;
+                }
+            }
+
+
+
+        }
+
+        &.dark {
+            .container {
+                height: 120vh;
+                .accordion-container {
+
+                    width: 100%;
+                    .accordion {
+                        font-size: 14px;
+
+                        .accordion-header {
+                            width: 90%;
+
+                            .icon {
+                                transform: scale(1.5, 1.2);
+
+                            }
+                        }
+
+                        .accordion-content {
+                            font-size: 14px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
