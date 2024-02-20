@@ -42,4 +42,8 @@ export class NavBarComponent {
   quieroInvertir() {
     this.router.navigate(['contacto'])
   }
+
+  gotoHome(){
+    this.router.navigate([''])
+  }
 }

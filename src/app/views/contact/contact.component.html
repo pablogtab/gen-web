@@ -1,10 +1,6 @@
 <article>
   <h1>Contáctanos</h1>
-  <img
-    src="assets/contact-background.png"
-    alt="background"
-    class="background-1"
-  />
+  <img src="assets/contact-background.png" alt="background" class="background-1" />
 </article>
 
 <section class="contact">
@@ -68,17 +64,12 @@
       <div class="group" style="flex: 3">
         <div class="input-form">
           <span>Mensaje</span>
-          <textarea
-            [(ngModel)]="message"
-            style="resize: none"
-            type="text"
-          ></textarea>
+          <textarea [(ngModel)]="message" style="resize: none" type="text"></textarea>
         </div>
       </div>
       <div class="group">
-        <a href="mailto:{{ email }}?subject={{ subject }}&body={{ message }}"
-          >Enviar Mensaje <img src="assets/icon-arrow.png"
-        /></a>
+        <a href="mailto:{{ email }}?subject={{ subject }}&body={{ message }}">Enviar Mensaje <img
+            src="assets/icon-arrow.png" /></a>
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
@@ -12,24 +12,28 @@ export class WhyGenComponent {
 
   constructor() { }
 
-  ngOnInit() {
-    let observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
-      });
-    }, { threshold: 0.5 });
+  ngAfterViewInit() {
 
+    setTimeout(
+      () => {
+        this.onScrollEvent()
+      }, 50)
 
-
-    const elements = document.querySelectorAll('.progress');
-
-    elements.forEach((el) => {
-      observer.observe(el);
-    });
   }
 
+  @HostListener('window:scroll', ['$event']) onScrollEvent() {
+    const element = document.getElementById('animate');
+
+    if (element && !element.classList.contains('animate')) {
+      let bound = element.getBoundingClientRect()
+      const yElement = bound.top
+      const y = window.innerHeight
+      if (yElement < (y - bound.height / 2)) {
+        element.classList.add('animate')
+      }
+    }
+
+  }
 
 
 }

@@ -113,9 +113,9 @@ article {
 
                 circle.progress {
                     stroke-linecap: round;
-                    stroke-dasharray: 440;
+                    stroke-dasharray: 450;
                     stroke: #014F5B;
-                    stroke-dashoffset: 440;
+                    stroke-dashoffset: 450;
                     transform: rotate(-90deg);
                     transform-origin: 80px 80px;
 
@@ -126,7 +126,7 @@ article {
 
                 @keyframes big-progress {
                     0% {
-                        stroke-dashoffset: 440;
+                        stroke-dashoffset: 450;
                     }
 
                     100% {
