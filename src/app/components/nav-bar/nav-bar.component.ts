@@ -46,4 +46,8 @@ export class NavBarComponent {
   gotoHome(){
     this.router.navigate([''])
   }
+
+  navigateTo(page: string) {
+    window.open(page, '_blank')
+  }
 }

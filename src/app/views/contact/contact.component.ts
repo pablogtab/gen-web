@@ -16,4 +16,8 @@ export class ContactComponent {
 
 
   constructor() { }
+
+  navigateTo(url: string) {
+    window.open(url, '_blank')
+  }
 }

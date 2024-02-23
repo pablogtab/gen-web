@@ -326,6 +326,18 @@ a:active {
                 border-radius: 40px;
                 cursor: pointer;
             }
+
+            &:hover{
+                background-color: #01414b;
+                transform: scale(1.02);
+                transition: all 0.2s;
+                
+                .icon-container{
+                    transform: translateY(-5px);
+                    transition: all 0.2s;
+                }
+
+            }
         }
     }
 }

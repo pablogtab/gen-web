@@ -3,11 +3,11 @@
   <a class="phone" href="https://api.whatsapp.com/send/?phone=13053339446&text&type=phone_number&app_absent=0">+1
     206-214-2298</a>
   <mat-icon>mail</mat-icon>
-  <a class="mail" href="mailto:info@genprojectusa.com">info{{ " @" }}genprojectusa.com</a>
+  <a class="mail" href="mailto:info@genprojectusa.com">info{{ "@" }}genprojectusa.com</a>
   <div class="media">
     <img src="assets/icon-linkedin.png" style="margin-top: -5px" />
-    <mat-icon>facebook</mat-icon>
-    <img src="assets/icon-instagram.png" />
+    <mat-icon (click)="navigateTo('https://www.facebook.com/profile.php?id=61551231032573')">facebook</mat-icon>
+    <img (click)="navigateTo('https://www.instagram.com/invertirenusahoy/')" src="assets/icon-instagram.png" />
   </div>
 </section>
 <nav class="nav-container">
