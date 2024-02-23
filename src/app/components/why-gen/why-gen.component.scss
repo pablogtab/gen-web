@@ -250,13 +250,7 @@ article {
       }
 
       .line {
-        animation: translation 1s ease-in-out forwards,
-          fade-in 0.25s ease-in-out forwards;
-        animation-delay: 1.1s;
-      }
-      .center {
-        animation: translation-reverse 1s ease-in-out forwards,
-          fade-in 0.25s ease-in-out forwards;
+        animation: fade-in 0.25s ease-in-out forwards;
         animation-delay: 1.1s;
       }
     }
